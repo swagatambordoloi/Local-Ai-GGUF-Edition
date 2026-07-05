@@ -23,6 +23,12 @@ A privacy-first, fully offline, on-device AI conversational assistant for Androi
 
 ---
 
+## 📱 Interface Preview
+
+| Light Mode (System Tint) | Dark Mode (System Tint) |
+| :---: | :---: |
+| <img src="screenshots/chat_light.png" width="320" alt="Light Theme Interface"> | <img src="screenshots/chat_dark.png" width="320" alt="Dark Theme Interface"> |
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -31,11 +37,19 @@ A privacy-first, fully offline, on-device AI conversational assistant for Androi
   * Qwen 2.5 Coder 0.5B / 1.5B (Instruct variants)
   * Llama 3.2 1B / 3B (Instruct variants)
   * Phi-4 Miniature variants
+### 📥 Recommended Models
 
+Since this app runs entirely on your device's CPU, we recommend using highly optimized, small-parameter models (Instruct/Chat variants). You can download them directly from Hugging Face:
+
+*   **[Qwen 2.5 Coder 1.5B GGUF](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF)** - *Highly recommended for coding, logic, and general assistance.*
+*   **[Llama 3.2 1B GGUF](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF)** - *Extremely lightweight, lightning-fast generation speeds on mobile CPUs.*
+*   **[Phi-4 Mini GGUF](https://huggingface.co/QuantFactory/phi-4-mini-instruct-GGUF)** - *Great for complex reasoning tasks.*
+
+> 💡 **Tip:** For the best balance of speed and intelligence on a smartphone, look for files ending in **`Q4_K_M.gguf`** (4-bit medium quantization) or **`Q5_K_M.gguf`** (5-bit medium quantization).
 ### Installation & Setup
 
 1. **Download the App:** Clone this repository and compile the build locally via Android Studio, or download the compiled standalone binary executable straight from our latest [Releases](https://github.com/swagatambordoloi/Local-Ai-GGUF-Edition/releases) tab.
-2. **Install the APK:** Open the downloaded `app-debug.apk` file on your device. Ensure you have allowed *"Install from unknown sources"* in your Android security parameters.
+2. **Install the APK:** Open the downloaded `Local Ai GGUF Edition.apk` file on your device. Ensure you have allowed *"Install from unknown sources"* in your Android security parameters.
 3. **Import a Model:** 
    * Tap the **Import GGUF Model File** action card at the top of the main dashboard.
    * Select your locally stored `.gguf` file from your device's internal storage directory.
