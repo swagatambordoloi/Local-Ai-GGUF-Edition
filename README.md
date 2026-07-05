@@ -73,6 +73,8 @@ Since this app runs entirely on your device's CPU, we recommend using highly opt
 └── README.md                   # Project documentation
 ```
 ##🔒 Privacy & Data Policy
+
+
 Local AI runs entirely sandboxed. It requires no networking permissions (android.permission.INTERNET is completely absent from the manifest configuration). Your logs, inputs, weights, and conversation trees remain entirely on your own physical hardware indefinitely.
 
 ## 🔮 Roadmap & Upcoming Features
