@@ -1,7 +1,12 @@
-# Treat the native C++ engine files as vendored (third-party dependency)
-# This keeps the code in your repo but stops it from counting towards language stats
-app/src/main/cpp/* linguist-vendored
-gradle/* linguist-vendored
+# Recursively vendor ALL native code folders and build dependencies
+app/src/main/cpp/** linguist-vendored
+gradle/** linguist-vendored
 
-# Explicitly flag your Kotlin source tree as documentation or core language
+# Vendor the loose test/build files sitting in the root directory
+test.c linguist-vendored
+test.cpp linguist-vendored
+test.obj linguist-vendored
+test_msvc.exe linguist-vendored
+
+# Explicitly ensure Kotlin stays detectable
 *.kt linguist-detectable=true
