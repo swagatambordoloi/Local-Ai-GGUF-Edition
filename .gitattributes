@@ -1,0 +1,7 @@
+# Treat the native C++ engine files as vendored (third-party dependency)
+# This keeps the code in your repo but stops it from counting towards language stats
+app/src/main/cpp/* linguist-vendored
+gradle/* linguist-vendored
+
+# Explicitly flag your Kotlin source tree as documentation or core language
+*.kt linguist-detectable=true
