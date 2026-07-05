@@ -1,0 +1,7 @@
+# Force Kotlin to be detected as a primary language regardless of repository size
+*.kt linguist-detectable=true
+
+# Ignore massive raw log text and compiled binaries from the calculation
+debug*.txt linguist-vendored
+*.exe linguist-vendored
+*.obj linguist-vendored
